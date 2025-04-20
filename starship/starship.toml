@@ -1,0 +1,15 @@
+# ~/.config/starship.toml
+
+# Customize the prompt style
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[✗](bold red)"
+
+# Enable or disable modules (e.g., Git, Python, Node, etc.)
+[git_status]
+disabled = false
+
+# Customize the time format in the prompt
+[time]
+format = "[$time](bold blue) "
+
