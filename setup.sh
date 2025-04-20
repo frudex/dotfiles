@@ -29,6 +29,19 @@ if ! command -v nvim &> /dev/null; then
   brew install neovim
 fi
 
+# Install Node.js if it's not installed (for coc.nvim)
+if ! command -v node &> /dev/null; then
+  echo "Installing Node.js..."
+  brew install node
+fi
+
+# Install vim-plug for Neovim
+if [ ! -f ~/.local/share/nvim/site/autoload/plug.vim ]; then
+  echo "Installing vim-plug for Neovim..."
+  curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
+
 # Copy the config files
 echo "Copying config files..."
 
