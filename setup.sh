@@ -58,7 +58,7 @@ ln -sf ~/dotfiles/starship/starship.toml ~/.config/starship.toml
 
 # Neovim config
 mkdir -p ~/.config/nvim
-ln -sf ~/dotfiles/nvim/* ~/.config/nvim/
+ln -sf ~/dotfiles/nvim ~/.config
 
 # Reload shell and apply changes
 source ~/.zshrc

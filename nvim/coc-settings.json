@@ -1,0 +1,13 @@
+{
+  "suggest.maxCompleteItemCount": 20,
+  "suggest.minTriggerInputLength": 2,
+  "suggest.triggerCompletionWait": 300,
+  "clangd.arguments": [
+    "--compile-commands-dir=../build",
+    "--query-driver=/usr/bin/c++",
+    "--completion-style=detailed",
+    "--limit-results=20",
+    "--background-index",
+    "--clang-tidy"
+  ]
+}

@@ -22,6 +22,9 @@ Plug 'tpope/vim-commentary'
 " Colorscheme
 Plug 'morhetz/gruvbox'
 
+" VimBeGood
+Plug 'ThePrimeagen/vim-be-good'
+
 call plug#end()
 
 " --- GENERAL SETTINGS ---
@@ -39,4 +42,7 @@ colorscheme gruvbox
 
 " --- KEYBINDINGS ---
 nnoremap <C-n> :NERDTreeToggle<CR>
+" Smart Tab behavior for coc.nvim
+inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <silent><expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<C-h>"
 
