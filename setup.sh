@@ -57,7 +57,7 @@ mkdir -p ~/.config
 ln -sf ~/dotfiles/starship/starship.toml ~/.config/starship.toml
 
 # Neovim config
-mkdir -p ~/.config/nvim
+rm -rf ~/.config/nvim
 ln -sf ~/dotfiles/nvim ~/.config
 
 # Reload shell and apply changes
